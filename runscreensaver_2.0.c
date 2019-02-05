@@ -1,6 +1,6 @@
 /* compile with */
 /* gcc -o screensaver runscreensaver.c -lXss -lX11 */
-/* WSS4XSCREENSAVER*/
+/* SCREENSAVER4WINE*/
 /* Author: Alex Terranova */
 /* Date: 02/02/2019 */
 /* License: Free to distribute and modify */
@@ -18,13 +18,11 @@
 #include <X11/keysym.h>
 #include <X11/X.h>
 
-/* Location of Windows Screensaver under wine */
-/* Replace the screensaver name/path with your screensaver*/
 #define SHELLSCRIPT "\
 #/bin/bash \n\
 ./startscreensaver.sh \n\
 "
-/* Makes sure ScreenSaver is killed on not IDLE */
+
 #define KILLSCREENSAVER "\
 #/bin/bash \n\
 ./killscreensaver.sh \n\
@@ -37,7 +35,7 @@ int main(void) {
   unsigned int currenttime=0;
   
   FILE *myFile;
-  myFile = fopen("time.txt", "r"); // get time from text file for the Windows Screensaver to start
+  myFile = fopen("time.txt", "r"); 
   int getmytime;
   fscanf(myFile, "%d", &getmytime);
   
@@ -45,7 +43,6 @@ int main(void) {
   
   if (!dpy) { return(1); }
   
-  // run program until terminated by user
   
   while (forever==1)
   { 
