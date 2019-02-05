@@ -8,7 +8,7 @@ With version 2.0 I have included the binary compiled on Kubuntu 18.10
 
 [2] Modify (time.txt) (Here you can set the time in seconds for when your Windows Screensaver should start after idle time begins)
 
-*Note: You must keep all files in the same directory [screensaver *binary, time.txt, startscreensaver.sh, killscreensaver.sh]
+*Note: You must keep all files in the same directory [screensaver *linux binary, time.txt, startscreensaver.sh, killscreensaver.sh]
 
 --------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ If you still want/need to compile this program:
 
 -First install: build-essential, libx11-dev, libxss-dev
 
--Open the file: runscreensaver.c with your text editor.
+-Open the file: runscreensaver_2.0.c with your text editor.
 
 -Compile with "gcc -o screensaver runscreensaver_2.0.c -lXss -lX11" leaving out the quotation marks
 
