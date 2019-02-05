@@ -1,4 +1,4 @@
-# WSS4XSCREENSAVER-2.0
+# SCREENSAVER4WINE-2.0
 
 A simple program written in C that can run Windows screensavers in Linux via Wine when idle.
 
