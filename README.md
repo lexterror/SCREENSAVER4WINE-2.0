@@ -20,7 +20,7 @@ If you still want/need to compile this program:
 
 -Open the file: runscreensaver.c with your text editor.
 
--Compile with "gcc -o screensaver runscreensaver.c -lXss -lX11" leaving out the quotation marks
+-Compile with "gcc -o screensaver runscreensaver_2.0.c -lXss -lX11" leaving out the quotation marks
 
 --------------------------------------------------------------------
 
