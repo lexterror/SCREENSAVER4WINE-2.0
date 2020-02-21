@@ -24,6 +24,6 @@ If you still want/need to compile this program:
 
 --------------------------------------------------------------------
 
-*As far as I know this program doesn't work with multi-monitor setups yet.
+*It works with Multiple Monitors (Unified Only) starting with Wine 5.0
 
 *If you would like the program to start when you sign in just add the executable to "Startup Applications" in Linux.
